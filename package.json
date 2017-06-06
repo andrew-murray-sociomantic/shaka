@@ -1,0 +1,27 @@
+{
+  "name": "shaka",
+  "version": "1.0.0",
+  "description": "The shaka is a hand gesture where the hand is raised and only the thumb and the pinky are extended.",
+  "main": "index.js",
+  "repository": "https://github.com/andrew-murray-sociomantic/shaka.git",
+  "author": "andrew-murray-sociomantic <andrew-murray@sociomantic.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -d && cp demo/index.html dist/index.html && webpack-dev-server --hot --inline --colors --progress --content-base src/",
+        "build-prod": "webpack -p && cp src/app/index.html dist/index.html"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
